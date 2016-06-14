@@ -8,3 +8,8 @@ greet();
   module.exports = greet;
 
 });
+
+// Then that wrapped code is invoked...
+fn(module.exports, require, module, filename, dirname);
+
+return module.exports;
