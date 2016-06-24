@@ -24,3 +24,13 @@ It’s important to remember that V8 code will always wait to run the callback c
 **Buffer** = A temporary holding spot for data being moved from one place to another. *Intentionally limited in size.*
 
 **Stream** = A sequence of data made available over time. Pieces of data that eventually combine into a whole.
+
+# Binary Data, Character Sets, & Encoding
+
+**Binary Data** = Data stored in sets of 1s and 0s. Each one or zero is stored as a bit.
+
+**Character Set** = A representation of characters as numbers – unicode, ASCII, etc.
+
+**Character Encoding** = How characters are stored in binary. Fundamentally, it boils down to how many bits we are going to use to represent each number – in the case of UTF-8, we are using 8 digits that can represent up to international languages.
+
+The above definitions are important because, when dealing with a server, you must be able to easily deal with binary data. Historically, Javascript has not been very good at this; however, Node expands the capabilities of V8 to allow us to deal with this data.
