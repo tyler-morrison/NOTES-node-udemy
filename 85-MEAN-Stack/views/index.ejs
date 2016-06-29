@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="TestApp">
+<head>
+  <meta charset="UTF-8">
+  <title>The MEAN Stack</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js" charset="utf-8"></script>
+</head>
+<body ng-controller="MainController as vm">
+  <ul>
+    <li ng-repeat="person in vm.people">{{ person.name }}</li>
+  </ul>
+  <script type="text/javascript">
+    var clientPeople = <%- JSON.stringify(serverPeople) %>;
+  </script>
+  <script src="/assets/js/app.js" charset="utf-8"></script>
+</body>
+</html>
